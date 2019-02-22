@@ -26,5 +26,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "hygen": "^2.1.2",
+    "lerna": "^3.13.0"
+  }
 }
