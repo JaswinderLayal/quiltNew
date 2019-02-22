@@ -1,25 +1,20 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import Accordion from "./components/MyAccordion";
+import "./App.css";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Accordion separator=">" separatorColour="#FFA500">
+          root
+          <a>category 1</a>
+          <a>category 2</a>
+          <div>category 3</div>
+          <p>category 4</p>
+          <p>category 5</p>
+        </Accordion>
       </div>
     );
   }
